@@ -9,6 +9,7 @@ function parseaParams(argv) { // Parsea los argumentos y valores ingresados
 async function main() {
   const params = parseaParams(process.argv.slice(2));
   const controller = new PelisController();
+  console.log(params)
 
   if (params._ == "add") {
     const newPeli = {
